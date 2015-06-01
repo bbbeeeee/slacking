@@ -55,20 +55,6 @@ function getHN(res) {
 			);
 		}
 	]);
-
-
-	// request.get('https://hacker-news.firebaseio.com/v0/topstories.json', 
-	// 	function(err, r, body) {
-	// 		if (!err && r.statusCode == 200) {
-	// 			body = JSON.parse(body);
-	// 			var random = Math.floor(Math.random() * body.length);
-	// 	    res.send(body[random]);
-
-	// 	    request.get('')
-	// 	  }
-	// 	  else res.send("failed");
-	// 	}
-	// );
 }
 
 function randomArticle(list){
