@@ -6,10 +6,12 @@ var express    = require('express'),
 
 app.use(bodyParser.json());
 
+// for slack
 app.post('/', function(req, res){
-	res.send(req.body);
+	getHN(res);
 });
 
+// for testing purposes
 app.get('/', function(req, res){
 	getHN(res);
 });
@@ -55,9 +57,4 @@ function getHN(res) {
 			);
 		}
 	]);
-}
-
-function randomArticle(list){
-	
-
 }
