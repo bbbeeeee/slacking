@@ -1,0 +1,29 @@
+{
+  "name": "slacking",
+  "version": "0.0.1",
+  "description": "Slack integration for you to slack with.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/btroo/slacking.git"
+  },
+  "keywords": [
+    "bored",
+    "slack"
+  ],
+  "author": "Brandon Truong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btroo/slacking/issues"
+  },
+  "homepage": "https://github.com/btroo/slacking",
+  "dependencies": {
+    "async": "^1.1.0",
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "request": "^2.57.0"
+  }
+}
