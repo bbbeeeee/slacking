@@ -56,7 +56,7 @@ function getHN(res) {
 					]
 
 					message = {
-						"text": "Slacking test"
+						"text": "Slacking test",
 						"attachments": [
 							{
 								"fallback": "Something went wrong :(\nWe know you're bored... try the command again maybe?",
