@@ -57,11 +57,26 @@ function getHN(res) {
 
 					message = {
 						"text": "Slacking test"
+						"attachments": [
+							{
+								"fallback": "Something went wrong :(\nWe know you're bored... try the command again maybe?",
+								"pretext": "Here's something to look at while you're bored:",
+								"title": body.title,
+								"title_link": body.url,
+								"text": body.text
+							}
+						]
 					}
 
-					res.send(message)
+					res.send(message);
+					callback(null, 'done');
 				}
 			);
 		}
-	]);
+	], function(err, result) {
+		if(err)
+			console.log(err);
+		else
+			console.log("Relieved boredom.");
+	});
 }
