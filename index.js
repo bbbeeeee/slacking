@@ -55,6 +55,10 @@ function getHN(res) {
 						}
 					]
 
+					message = {
+						"text": "Slacking test"
+					}
+
 					res.send(message)
 				}
 			);
