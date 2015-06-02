@@ -28,7 +28,7 @@ app.post('/', function(req, res){
 						body.url = "https://news.ycombinator.com/item?id=" + id;
 
 					var message = {
-						"text": "hello?"
+						"text": "hello?",
 						"attachments": [
 							{
 								"fallback": "Something went wrong :(\nWe know you're bored... try the command again maybe?",
