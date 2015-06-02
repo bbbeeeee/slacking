@@ -7,8 +7,6 @@ var express    = require('express'),
 app.use(bodyParser.json());
 
 app.post('/', function(req, res){
-	getHN(res);
-
 	async.waterfall([
 		function(callback) {
 			request.get('https://hacker-news.firebaseio.com/v0/topstories.json', 
@@ -25,12 +23,11 @@ app.post('/', function(req, res){
 
 					// Parse out the valuable information.
 					body = JSON.parse(body);
-					
+
 					if(body.url == "")
 						body.url = "https://news.ycombinator.com/item?id=" + id;
 
 					var message = {
-						"text": "Slacking test",
 						"attachments": [
 							{
 								"fallback": "Something went wrong :(\nWe know you're bored... try the command again maybe?",
