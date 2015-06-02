@@ -39,6 +39,8 @@ app.post('/', function(req, res){
 						]
 					}
 
+					message = {"text": "lol"};
+
 					res.send(message);
 					callback(null, 'done');
 				}
