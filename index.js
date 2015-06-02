@@ -8,7 +8,8 @@ app.use(bodyParser.json());
 
 // for slack
 app.post('/', function(req, res){
-	getHN(res);
+	res.send({text: "why is this repeating"});
+	//getHN(res);
 });
 
 // for testing purposes
